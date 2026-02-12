@@ -1,29 +1,29 @@
 import { useState } from "react";
 
-const InputBox = ({label,
+const InputBox = ({ label,
     amount,
-    onAmountchannge,
+    onAmountChange,
     onCurrencyChange,
-    selectCurrency="usd",
-    currencyoptions=[],
-    amountDisable=false,
-    currencyDisable=false,
+    selectCurrency = "usd",
+    currencyoptions = [],
+    amountDisable = false,
+    currencyDisable = false,
     className = "", }) => {
 
     return (
         <div className={`bg-white p-3 rounded-lg text-sm flex `}>
             <div className="w-1/2">
-                <label  className="text-black/40 mb-2 inline-block">
+                <label className="text-black/40 mb-2 inline-block">
                     {label}
                 </label>
                 <input
-                    
+
                     className="outline-none w-full bg-transparent py-1.5"
                     type="number"
                     placeholder="Amount"
-                    disabled={amountDisable}    
-                    value={amount} 
-                    onChange={(e)=>onAmountchannge && onAmountchannge(Number(e.target.value))} //the first condition checks if amount is provided then it will call the onAmountChange function with the new value.This is a common pattern in React to handle optional props and avoid errors when trying to call a function that may not be provided.
+                    disabled={amountDisable}
+                    value={amount}
+                    onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
                 />
             </div>
             <div className="w-1/2 flex flex-wrap justify-end text-right">
@@ -31,17 +31,17 @@ const InputBox = ({label,
                 <select
                     className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
                     value={selectCurrency}
-                    onChange={(e)=> onCurrencyChange &&  onCurrencyChange(e.target.value)} 
+                    onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
                     disabled={currencyDisable}
-                    
+
                 >
-                    {currencyoptions.map((currency)=>(
-                        
+                    {currencyoptions.map((currency) => (
+
                         <option key={currency} value={currency}>
-                           {currency}
+                            {currency}
                         </option>
                     ))}
-                
+
                 </select>
             </div>
         </div>
