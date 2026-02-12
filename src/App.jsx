@@ -26,10 +26,10 @@ function App() {
 
     return (
         <div
-            className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
-            style={{
-                backgroundImage: `url('https://imgs.search.brave.com/QP_HMnHANnvKfVgYZ1Rpc1Pvp97VNTV4VGGlX5kLtMY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODc1/MDc0MTE2L3Bob3Rv/L2JhY2tncm91bmQt/c3RvY2stbWFya2V0/LWFuZC1maW5hbmNl/LWVjb25vbWljLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1t/TDRDZVhkeWI1SFJn/ZXFXeW9HdW5fZEZy/bDZ4elR6TS15WHRr/c0RWeXNBPQ')`,
-            }}
+            className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat bg-center"
+           style={{
+                backgroundImage: `url('https://imgs.search.brave.com/crlJhtHlTAjD8cqC-cXUIB6-t2U_ux9fj6yYn-4ggCc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTUw/NjU0MTU0OS92ZWN0/b3IvZmluYW5jZS1i/YWNrZ3JvdW5kLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1P/MGpvQVNtWlhwaTc3/ZUw1ZFp0d29UR0ZB/OVg3M0VfN2hFRHV4/V3NpMXk0PQ')`,
+            }} 
         >
             <div className="w-full">
                 <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
