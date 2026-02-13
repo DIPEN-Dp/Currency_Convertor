@@ -32,7 +32,7 @@ function App() {
             }} 
         >
             <div className="w-full">
-                <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+                <div className="w-full max-w-md mx-auto border rounded-2xl p-5 backdrop-blur-lg">
                     <form
                         onSubmit={(e) => {
                             e.preventDefault();
@@ -54,7 +54,7 @@ function App() {
                         <div className="relative w-full h-0.5">
                             <button
                                 type="button"
-                                className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
+                                className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5 hover:bg-blue-800"
                                 onClick={swap}
                             >
                                 swap
@@ -70,7 +70,7 @@ function App() {
                                 amountDisable
                             />
                         </div>
-                        <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
+                        <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg  transition transform active:bg-blue-800"> 
                             Convert {from.toUpperCase()} to {to.toUpperCase()}
                         </button>
                     </form>

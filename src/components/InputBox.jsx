@@ -11,8 +11,8 @@ const InputBox = ({ label,
     className = "", }) => {
 
     return (
-        <div className={`bg-white p-3 rounded-lg text-sm flex `}>
-            <div className="w-1/2">
+        <div className={`bg-white p-3 rounded-lg text-md flex `}>
+            <div className="w-1/2 flex flex-wrap">
                 <label className="text-black/40 mb-2 inline-block">
                     {label}
                 </label>
